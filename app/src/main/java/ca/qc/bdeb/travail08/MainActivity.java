@@ -1,5 +1,6 @@
 package ca.qc.bdeb.travail08;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -67,5 +68,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         imageView = (ImageView) findViewById(R.id.imageView);
+    }
+
+    public void AllerAuMicroOnde(View view) {
+        startActivity(new Intent(this, MicroOndeActivity.class));
     }
 }
